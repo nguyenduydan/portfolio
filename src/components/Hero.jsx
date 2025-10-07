@@ -118,9 +118,22 @@ const Hero = ({ hasAnimated }) => {
                     {/* Social Links */}
                     <div className="flex justify-center space-x-6 mb-8 animate-fade-in-up delay-300">
                         {heroData.socialLinks.map((social, index) => {
-                            const IconComponent = social.icon === 'GitHub' ? Github : social.icon === 'Linkedin' ? Linkedin : Mail;
+                            const IconComponent =
+                                social.icon === "GitHub"
+                                    ? Github
+                                    : social.icon === "Linkedin"
+                                        ? Linkedin
+                                        : Mail;
+
                             return (
-                                <a key={index} href={social.url} className="group p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 hover:bg-black">
+                                <a
+                                    key={index}
+                                    href={social.url}
+                                    aria-label={`Visit my ${social.icon} profile`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                                >
                                     <IconComponent className="w-6 h-6 text-gray-700 group-hover:text-white transition-colors" />
                                 </a>
                             );

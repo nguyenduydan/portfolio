@@ -72,14 +72,16 @@ const Contact = () => {
                                     {/* Copy button */}
                                     <button
                                         onClick={() => copyToClipboard('0898394312', 'phone')}
+                                        aria-label={copiedPhone ? "Copied phone number" : "Copy phone number"}
                                         className="bg-green-400/10 hover:bg-green-400/20 p-3 rounded-lg border border-green-400/30 hover:border-green-400/50 transition-all duration-300 group/btn hover:scale-110 cursor-pointer"
                                     >
                                         {copiedPhone ? (
                                             <Check className="text-green-400" size={20} />
                                         ) : (
-                                            <Copy className="text-green-400 group-hover/btn:rotate-12 transition-transform " size={20} />
+                                            <Copy className="text-green-400 group-hover/btn:rotate-12 transition-transform" size={20} />
                                         )}
                                     </button>
+
                                 </div>
 
                                 {/* Animated underline */}
@@ -117,6 +119,7 @@ const Contact = () => {
                                     {/* Copy button */}
                                     <button
                                         onClick={() => copyToClipboard('duydan.cv@gmail.com', 'email')}
+                                        aria-label={copiedPhone ? "Copied email" : "Copy email"}
                                         className="bg-blue-400/10 hover:bg-blue-400/20 p-3 rounded-lg border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 group/btn hover:scale-110 cursor-pointer"
                                     >
                                         {copiedEmail ? (
