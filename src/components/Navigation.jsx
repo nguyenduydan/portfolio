@@ -94,7 +94,9 @@ const Navigation = () => {
 
                         {/* Mobile Menu */}
                         <div className={`md:hidden w-full}`}>
-                            <div className={`absolute transition-all duration-400 ease-out left-0 right-0 mt-4 mx-4 p-4 bg-black/80 backdrop-blur-lg shadow-lg rounded-lg ${isMobileMenu ? "h-56 opacity-100" : "h-0 opacity-0"}`}>
+                            <div
+                                className={`absolute transition-all duration-400 ease-out left-0 right-0 mt-4 mx-4 p-4 bg-black/80 backdrop-blur-lg shadow-lg rounded-lg ${isMobileMenu ? "h-56 opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}`}
+                            >
                                 <div className="space-y-3">
                                     {navItems.map((item) => (
                                         <a

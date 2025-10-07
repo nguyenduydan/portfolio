@@ -62,7 +62,7 @@ const Contact = () => {
                                             <span className="text-gray-400 text-sm text-start font-medium mb-1">Số điện thoại</span>
                                             <a
                                                 href="tel:0898394312"
-                                                className="text-green-400 text-xl font-bold tracking-wider group-hover:text-green-300 transition-colors"
+                                                className="text-green-400 text-md md:text-xl font-bold tracking-wider group-hover:text-green-300 transition-colors"
                                             >
                                                 0898 394 312
                                             </a>
@@ -109,7 +109,7 @@ const Contact = () => {
                                             <span className="text-gray-400 text-sm font-medium mb-1 text-start">Email</span>
                                             <a
                                                 href="mailto:duydan.cv@gmail.com"
-                                                className="text-blue-400 text-xl font-bold group-hover:text-blue-300 transition-colors break-all"
+                                                className="text-blue-400 text-md md:text-xl font-bold group-hover:text-blue-300 transition-colors break-all"
                                             >
                                                 duydan.cv@gmail.com
                                             </a>

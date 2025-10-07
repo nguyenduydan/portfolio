@@ -1,109 +1,287 @@
 @import "tailwindcss";
 
-/* custom animations */
+
+/* Dành cho trình duyệt Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f72a, #06b6d4);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background 0.3s ease;
+}
+
+/* ========= Custom Animations ========= */
+
+/* Fade in */
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
   }
 
-  to{
+  to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Fade in up */
+@-webkit-keyframes fade-in-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Floating effect */
+@-webkit-keyframes float {
+
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes float {
-  0%,100%{
-    transform: translateY(-20px);
+
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
 
-  50%{
-    transform: translateY(0);
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Zoom in */
+@-webkit-keyframes zoom-in {
+  0% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes zoom-in {
   0% {
-    transform: scale(2);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
   }
 
   100% {
+    -webkit-transform: scale(1);
     transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Slow spin */
+@-webkit-keyframes spin-slow {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spin-slow {
   from {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+/* Scroll left */
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes scroll-left {
   0% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
   100% {
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+}
+
+/* Scroll right */
+@-webkit-keyframes scroll-right {
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes scroll-right {
   0% {
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
-.animate-fade-in{
-  animation: fade-in 0.8s ease-out;
+/* ========= Animation Classes ========= */
+
+.animate-fade-in {
+  -webkit-animation: fade-in 0.8s ease-out both;
+  animation: fade-in 0.8s ease-out both;
+  will-change: opacity, transform;
 }
 
-.animate-fade-in-up{
-    animation: fade-in-up 0.8s ease-out ;
+.animate-fade-in-up {
+  -webkit-animation: fade-in-up 0.8s ease-out both;
+  animation: fade-in-up 0.8s ease-out both;
+  will-change: opacity, transform;
 }
 
-.animate-float{
-  animation: float var(--speed,3s) ease-in-out infinite;
+.animate-float {
+  -webkit-animation: float var(--speed, 3s) ease-in-out infinite;
+  animation: float var(--speed, 3s) ease-in-out infinite;
+  -webkit-animation-delay: var(--delay, 0s);
   animation-delay: var(--delay, 0s);
+  will-change: transform;
 }
 
-.animate-zoom-in{
-  animation: zoom-in 0.8s ease-out forwards;
+.animate-zoom-in {
+  -webkit-animation: zoom-in 0.8s ease-out both;
+  animation: zoom-in 0.8s ease-out both;
+  will-change: transform, opacity;
 }
 
 .animate-spin-slow {
+  -webkit-animation: spin-slow 6s linear infinite;
   animation: spin-slow 6s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll-left {
+  -webkit-animation: scroll-left 25s linear infinite;
   animation: scroll-left 25s linear infinite;
-}
-.animate-scroll-right {
-  animation: scroll-right 25s linear infinite;
+  will-change: transform;
 }
 
+.animate-scroll-right {
+  -webkit-animation: scroll-right 25s linear infinite;
+  animation: scroll-right 25s linear infinite;
+  will-change: transform;
+}
+
+/* ========= Pause state ========= */
 .paused * {
+  -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
+}
+
+/* ========= Accessibility & Mobile ========= */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .animate-float {
+    -webkit-animation-duration: calc(var(--speed, 3s) * 1.5);
+    animation-duration: calc(var(--speed, 3s) * 1.5);
+  }
+
+  .animate-scroll-left,
+  .animate-scroll-right {
+    -webkit-animation-duration: 35s;
+    animation-duration: 35s;
+  }
 }
