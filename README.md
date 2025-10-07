@@ -1,5 +1,4 @@
-# Portfolio cá nhân — Nguyễn Duy Dần
-
+# Portfolio cá nhân — Nguyễn Thiết Duy Đan
 Một trang portfolio cá nhân xây dựng bằng **React + Vite + Tailwind CSS** để giới thiệu bản thân, kỹ năng, dự án, và thông tin liên hệ.
 
 ---
@@ -112,7 +111,7 @@ Thư mục `dist/` sẽ được tạo, sẵn sàng để deploy.
 
 ## 📬 Liên hệ
 
-**Nguyễn Duy Dần**
+**Nguyễn Thiết Duy Đan**
 📧 Email: duydan.cv@gmail.com
 💻 GitHub: [nguyenduydan](https://github.com/nguyenduydan)
 🌐 Portfolio: [https://nguyenduydan.github.io/portfolio](https://nguyenduydan.github.io/portfolio)
