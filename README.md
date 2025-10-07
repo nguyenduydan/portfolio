@@ -30,7 +30,7 @@ Trang portfolio được thiết kế để:
 
 - Giao diện hiện đại, trực quan, responsive trên mọi thiết bị.
 - Phân chia rõ ràng các phần: About, Skills, Projects, Contact.
-- Hiệu ứng động nhẹ (Framer Motion / AOS).
+- Hiệu ứng động nhẹ.
 - Hỗ trợ dark mode (tùy chọn).
 - Dễ dàng mở rộng, tùy chỉnh và cập nhật nội dung.
 
@@ -40,9 +40,8 @@ Trang portfolio được thiết kế để:
 
 - **Frontend:** React + Vite
 - **CSS:** Tailwind CSS
-- **Icons:** Lucide React / Heroicons
-- **Hiệu ứng:** Framer Motion
-- **Triển khai:** Netlify / Vercel / GitHub Pages
+- **Icons:** Lucide React
+- **Triển khai:**  Vercel 
 
 ---
 
@@ -60,7 +59,6 @@ portfolio/
 │   ├── App.jsx
 │   └── main.jsx
 ├── package.json
-├── tailwind.config.js
 ├── vite.config.js
 └── README.md
 ```
@@ -71,7 +69,7 @@ portfolio/
 
 ### 1️⃣ Yêu cầu
 
-- Node.js (phiên bản ≥ 16)
+- Node.js (phiên bản ≥ 18)
 - npm hoặc yarn
 
 ### 2️⃣ Cài đặt
