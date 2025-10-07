@@ -1,8 +1,11 @@
 
+import { useState } from 'react';
 import { projects } from '../data/projects';
 import Card from './Card';
+import Modal from './Modal';
 
 const Projects = ({ hasAnimated }) => {
+    const [selectedProject, setSelectedProject] = useState(null);
 
     return (
         <section id='projects' className='py-16 md:px-10 px-5 min-h-screen'>
@@ -21,11 +24,20 @@ const Projects = ({ hasAnimated }) => {
                     {/* Projects Grid */}
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up'>
                         {projects.map((project, index) => (
-                            <Card index={index} project={project} />
+                            <Card
+                                key={index}
+                                project={project}
+                                onClick={() => setSelectedProject(project)}
+                            />
                         ))}
                     </div>
                 </div>
             </div>
+            <Modal
+                isOpen={selectedProject !== null}
+                onClose={() => setSelectedProject(null)}
+                project={selectedProject}
+            />
         </section>
     );
 };

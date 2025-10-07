@@ -1,7 +1,7 @@
 export const heroData = {
-    greeting: "👋 Xin chào, Mình",
+    greeting: "👋 Xin chào, mình",
     name: "Nguyễn Thiết Duy Đan",
-    roles: ["Frontend Developer", "Backend Developer"],
+    roles: ["Frontend Developer", "Backend Developer", ".NET Developer", "Software Developer"],
     description:
         "Là một sinh viên mới tốt nghiệp, mình là Backend Developer .NET/NodeJS Developer hoặc Frontend Developer, ReactJS đầy nhiệt huyết, mong muốn đóng góp vào các giải pháp phần mềm sáng tạo.",
     stats: [
@@ -10,9 +10,9 @@ export const heroData = {
 
     ],
     socialLinks: [
-        { name: "GitHub", url: "https://github.com/janedoe", icon: "GitHub" },
-        { name: "LinkedIn", url: "https://linkedin.com/in/janedoe", icon: "Linkedin" },
-        { name: "Email", url: "https://linkedin.com/in/janedoe", icon: "Email" },
+        { name: "GitHub", url: "https://github.com/nguyenduydan", icon: "GitHub" },
+        { name: "LinkedIn", url: "https://www.linkedin.com/in/nguyenthietduydan/", icon: "Linkedin" },
+        { name: "Email", url: "mailto:duydan.cv@gmail.com", icon: "Email" },
     ],
     ctaButtons: [
         {
