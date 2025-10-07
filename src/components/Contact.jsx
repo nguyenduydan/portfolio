@@ -41,9 +41,9 @@ const Contact = () => {
                         Hãy kết nối với tôi qua các nền tảng dưới đây — tôi luôn sẵn lòng trao đổi,
                         hợp tác hoặc thảo luận về các ý tưởng công nghệ mới 💡
                     </p>
-                    <div className="flex flex-col items-center justify-center p-8 gap-6">
+                    <div className="flex flex-col items-center justify-center py-6 gap-6">
                         {/* Phone */}
-                        <div className="group relative w-full max-w-xl">
+                        <div className="group relative w-full">
                             {/* Animated background glow */}
                             <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition-opacity duration-500 animate-pulse"></div>
 
@@ -90,7 +90,7 @@ const Contact = () => {
                         </div>
 
                         {/* Email */}
-                        <div className="group relative w-full max-w-xl">
+                        <div className="group relative w-full">
                             {/* Animated background glow */}
                             <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition-opacity duration-500 animate-pulse"></div>
 

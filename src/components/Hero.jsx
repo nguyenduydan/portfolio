@@ -74,7 +74,7 @@ const Hero = ({ hasAnimated }) => {
                     </div>
 
                     {/* Name */}
-                    <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-gray-600 bg-clip-text text-transparent mb-5 animate-fade-in-up delay-75">
+                    <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-gray-600 bg-clip-text text-transparent mb-5 animate-fade-in-up delay-75">
                         {heroData.name}
                     </h1>
 
@@ -151,7 +151,7 @@ const Hero = ({ hasAnimated }) => {
                         ))}
                     </div>
                     {/* Scroll Indicator */}
-                    <div className="animate-zoom-in relative flex justify-center ">
+                    <div className="hidden animate-zoom-in relative md:flex justify-center ">
                         <div className="animate-bounce">
                             <button onClick={scrollToAbout} className="group flex flex-col items-center justify-center text-gray-600 hover:text-black cursor-ns-resize">
                                 <span className="text-sm font-medium ">Scroll</span>

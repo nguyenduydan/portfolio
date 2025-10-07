@@ -14,7 +14,7 @@ const Card = ({ project, onClick }) => {
                     loading="lazy"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
+                <div className='absolute hidden md:block inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
                     <div className='absolute bottom-4 left-4 right-4 flex gap-3'>
                         <a
                             target="_blank"
@@ -58,6 +58,26 @@ const Card = ({ project, onClick }) => {
                     {project.tech.length > 3 && (
                         <span className="px-3 py-1 bg-gradient-to-r from-[#00d369] to-black text-white text-sm rounded-full font-medium">...</span>
                     )}
+                </div>
+                <div className='flex gap-5 mt-5'>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={project?.github}
+                        className='flex-1 bg-white text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors cursor-pointer'
+                    >
+                        <Github size={18} />
+                        Code
+                    </a>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={project?.demo}
+                        className='flex-1 bg-gradient-to-l from-[#00d369] to-blue-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-colors cursor-pointer'
+                    >
+                        <ExternalLink size={18} />
+                        Live
+                    </a>
                 </div>
             </div>
 
