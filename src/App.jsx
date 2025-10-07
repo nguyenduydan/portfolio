@@ -8,6 +8,7 @@ import Background from "./components/Background";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <Projects hasAnimated={hasAnimated} />
       <Contact hasAnimated={hasAnimated} />
       <Footer />
+      <ScrollToTop showScrollTop={showScrollToTop} />
     </div>
   );
 };
