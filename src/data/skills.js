@@ -29,27 +29,3 @@ export const skills = [
         ]
     }
 ];
-
-// Soft skills data
-export const softSkills = [
-    {
-        name: 'Giao Tiếp Chuyên Nghiệp',
-        description: 'Kỹ năng trình bày và làm việc nhóm hiệu quả'
-    },
-    {
-        name: 'Đam Mê Học Hỏi',
-        description: 'Luôn cập nhật công nghệ và kiến thức mới'
-    },
-    {
-        name: 'Đúng Tin Cậy',
-        description: 'Cam kết deadline và chất lượng công việc'
-    },
-    {
-        name: 'Quản Lý Thời Gian Hiệu Quả',
-        description: 'Ưu tiên và xử lý công việc khoa học'
-    },
-    {
-        name: 'Ham Học Hỏi',
-        description: 'Tìm tòi và học hỏi không ngừng nghỉ'
-    },
-];

@@ -1,0 +1,14 @@
+{
+    "descriptions": {
+        "portfolio": "Một trang web giới thiệu bản thân và thể hiện ra các kỹ năng đã đúc kết được.",
+        "difachat": "Trang web dùng để giao tiếp với nhau qua các dòng tin nhắn với thời gian thực.",
+        "todox": "Một website quản lý các công việc cần làm. Nó cũng có phân trang, filter và một vài thứ khác nữa.",
+        "ntucoder": "Một website quản lý và bán các khóa học. Nó cũng cho phép người dùng code trực tiếp ngay tại website (Những chức năng này hiện tại chỉ chạy ở sandbox)."
+    },
+    "highlight": "Dự án",
+    "rest": "của mình",
+    "text": "Khám phá những tác phẩm mới nhất và các giải pháp sáng tạo của tôi. Mỗi dự án đều là một thử thách và trải nghiệm học tập độc đáo",
+    "btn_detail": "Xem chi tiết",
+    "btn_demo": "Xem demo",
+    "text_tect": "Công nghệ sử dụng"
+}

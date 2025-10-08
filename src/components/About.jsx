@@ -1,14 +1,18 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download, Phone } from 'lucide-react';
+import { useTranslation, Trans } from 'react-i18next';
 
 const About = ({ hasAnimated }) => {
+    const { t } = useTranslation("about");
+    const paragraphs = t("paragraphs", { returnObjects: true });
+
     return (
         <section id='about' className='md:px-10 px-5 py-16 bg-transparent relative flex items-center'>
             <div className="md:max-w-6xl max-w-3xl mx-auto w-full py-5">
                 {/* Title */}
                 <div className={`transition-all duration-1000 delay-100 ${hasAnimated.about ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                     <h2 className='text-4xl md:text-5xl font-bold mb-15 text-center'>
-                        Thông tin <span className='text-[#00FF7F]'>về mình</span>
+                        {t("title")} <span className='text-[#00FF7F]'>{t("highlight")}</span>
                     </h2>
                 </div>
 
@@ -17,12 +21,17 @@ const About = ({ hasAnimated }) => {
                     {/* Left Side - Text Content */}
                     <div className={`transition-all duration-1000 delay-300 ${hasAnimated.about ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
                         <div className='space-y-6'>
-                            <p className='text-gray-600 text-lg leading-relaxed'> Xin chào! Mình là một <span className='text-[#009c4e] font-semibold'>Lập trình viên Backend</span> mới ra trường, đam mê xây dựng các ứng dụng web ổn định và những API mạnh mẽ, mang lại trải nghiệm tốt nhất cho người dùng.
-                            </p>
-                            <p className='text-gray-600 text-lg leading-relaxed'> Mình có kiến thức và kinh nghiệm thực hành với các ngôn ngữ lập trình như <span className='text-[#009c4e] font-semibold'>PHP, JavaScript, HTML/CSS, C++, C#</span> cùng với các framework hiện đại như <span className='text-[#009c4e] font-semibold'>ReactJS, ASP.NET, Express và Laravel</span>. Ngoài ra, mình quen thuộc với nhiều hệ quản trị cơ sở dữ liệu như <span className='text-[#009c4e] font-semibold'>SQL Server, MySQL</span> và <span className='text-[#009c4e] font-semibold'>MongoDB</span>.
-                            </p>
-                            <p className='text-gray-600 text-lg leading-relaxed'> Mình là người <span className='text-[#009c4e] font-semibold'>lập kế hoạch hiệu quả</span>, có khả năng phối hợp tốt trong môi trường làm việc có thời hạn chặt chẽ. Là một người <span className='text-[#009c4e] font-semibold'>cởi mở và nhiệt tình</span>, mình luôn sẵn sàng học hỏi và hợp tác để cùng nhóm đạt được kết quả tốt nhất.
-                            </p>
+                            {paragraphs.map((text, index) => (
+                                <p key={index} className="text-gray-600 text-lg leading-relaxed">
+                                    {text.split(/<1>|<\/1>/).map((part, i) =>
+                                        i % 2 === 1 ? (
+                                            <span key={i} className="text-[#009c4e] font-semibold">{part}</span>
+                                        ) : (
+                                            part
+                                        )
+                                    )}
+                                </p>
+                            ))}
                         </div>
                         {/* Action Buttons */}
                         <div className='flex flex-wrap gap-4 pt-6 justify-center'>
@@ -31,16 +40,16 @@ const About = ({ hasAnimated }) => {
                                 className='inline-flex items-center px-6 py-3 bg-[#00FF7F] text-black font-semibold rounded-lg hover:bg-[#00FF7F]/90 transition-all duration-300 hover:scale-105'
                             >
                                 <Phone size={20} className='mr-2 animate-bounce' />
-                                Liên hệ mình
+                                {t("btn_contact")}
                             </a>
 
                             <a
                                 href="/cv.pdf"
                                 download
-                                className='inline-flex items-center px-6 py-3 border-2 border-[#00FF7F] text-[#00FF7F] font-semibold rounded-lg hover:bg-[#00FF7F] hover:text-black transition-all duration-300 hover:scale-105'
+                                className='inline-flex items-center px-6 py-3 border-2 border-[#02aa56] text-[#02aa56] font-semibold rounded-lg hover:bg-[#02aa56] hover:text-black transition-all duration-300 hover:scale-105'
                             >
                                 <Download size={20} className='mr-2' />
-                                Download CV
+                                {t("btn_download")}
                             </a>
                         </div>
                     </div>

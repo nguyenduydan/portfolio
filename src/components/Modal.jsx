@@ -1,10 +1,12 @@
 import { ExternalLink, Github, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Carousel from './Carousel';
+import { useTranslation } from 'react-i18next';
 
 const Modal = ({ isOpen, onClose, project }) => {
     const [visible, setVisible] = useState(false);
     const [animate, setAnimate] = useState(false);
+    const { t } = useTranslation("project");
 
     useEffect(() => {
         if (isOpen) {
@@ -33,13 +35,13 @@ const Modal = ({ isOpen, onClose, project }) => {
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
                 <div
                     onClick={(e) => e.stopPropagation()}
-                    className={`relative bg-black/80 backdrop-blur-md rounded-2xl shadow-2xl md:max-w-5xl w-full border border-[#00d369]/30 transition-all duration-200 transform ease-out
-                        ${animate ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}
+                    className={`relative bg-black/80 backdrop-blur-md rounded-2xl shadow-2xl md:max-w-5xl w-full border border-[#00d369]/30 transition-all duration-200 transform ease-in-out
+                        ${animate ? 'scale-100' : 'scale-0'}`}
                 >
                     {/* Close Button */}
                     <button
                         onClick={onClose}
-                        className="absolute top-0 right-0 bg-white/10 hover:bg-white/20 p-2 rounded-tr-lg rounded-bl-lg transition-colors z-10 cursor-pointer"
+                        className="absolute top-0 right-0 bg-white/10 hover:bg-white/20 p-2 rounded-tr-2xl rounded-bl-lg transition-colors z-10 cursor-pointer"
                     >
                         <X size={24} className="text-red-500" />
                     </button>
@@ -69,7 +71,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                                 <div className="w-1/2">
                                     <div className="mb-6">
                                         <h3 className="text-lg font-semibold text-[#00d369] mb-3">
-                                            Công nghệ sử dụng
+                                            {t("text_tech")}
                                         </h3>
                                         <div className="flex flex-wrap gap-2">
                                             {project?.tech.map((tag, i) => (
@@ -93,7 +95,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                                     className="flex-1 bg-gradient-to-r from-[#00d369] to-blue-600 text-white py-3 px-6 rounded-lg flex items-center justify-center gap-2 font-semibold hover:scale-105 transition-transform shadow-lg hover:shadow-[#00d369]/50"
                                 >
                                     <ExternalLink size={20} />
-                                    Xem Demo
+                                    {t("btn_demo")}
                                 </a>
                                 <a
                                     href={project?.github || ""}

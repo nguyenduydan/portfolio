@@ -6,12 +6,14 @@ import {
     Coffee,
     Lightbulb,
 } from "lucide-react";
-import { skills, softSkills } from "../data/skills";
+import { skills } from "../data/skills";
+import { useTranslation } from "react-i18next";
 
 const Skills = ({ hasAnimated }) => {
-
     const softSkillIcons = [Users, BookOpen, Sparkles, Coffee, Lightbulb];
     const allSkills = skills.flatMap(category => category.items);
+    const { t } = useTranslation("skill");
+    const softSkills = t("softSkills", { returnObjects: true });
 
     return (
         <section id="skills" className="px-6 py-16 bg-transparent relative">
@@ -24,7 +26,7 @@ const Skills = ({ hasAnimated }) => {
                         }`}
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
-                        Kỹ năng <span className="text-[#00FF7F]">của mình</span>
+                        {t("title")} <span className="text-[#00FF7F]">{t("highlight")}</span>
                     </h2>
                 </div>
 
@@ -54,13 +56,11 @@ const Skills = ({ hasAnimated }) => {
                                             <Code2 className="text-[#00FF7F]" size={22} />
                                         </div>
                                         <h3 className="text-2xl font-bold text-white">
-                                            Công Cụ & Công Nghệ
+                                            {t("title_tech")}
                                         </h3>
                                     </div>
                                     <p className="text-gray-300 text-sm leading-relaxed">
-                                        Thành thạo các công cụ và framework lập trình web hiện đại.
-                                        Có kinh nghiệm xây dựng ứng dụng thân thiện, tương tác tốt
-                                        và dễ bảo trì.
+                                        {t("text_tech")}
                                     </p>
                                 </div>
                             </div>
@@ -118,12 +118,11 @@ const Skills = ({ hasAnimated }) => {
                                             <Sparkles className="text-[#00FF7F]" size={22} />
                                         </div>
                                         <h3 className="text-2xl font-bold text-white">
-                                            Kỹ Năng Mềm
+                                            {t("title_softskill")}
                                         </h3>
                                     </div>
                                     <p className="text-gray-200 text-sm leading-relaxed">
-                                        Giao tiếp tốt, phối hợp hiệu quả và luôn chủ động học hỏi.
-                                        Dễ thích nghi, tích cực đóng góp trong môi trường nhóm.
+                                        {t("text_softskill")}
                                     </p>
                                 </div>
 

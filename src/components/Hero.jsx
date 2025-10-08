@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { heroData } from "../data/hero";
+import { getHeroData } from "../data/hero";
 import { Github, Mail, Linkedin, Mouse } from "lucide-react";
 import Rocket from "../assets/rocket-icon.svg";
 import Laptop from "../assets/laptop-icon.svg";
 import Avatar from "../assets/Avatar.jpg";
+import { useTranslation } from "react-i18next";
 
 const Hero = ({ hasAnimated }) => {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [currentText, setCurrentText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
     const [typingSpeed, setTypingSpeed] = useState(120);
-
+    const { t } = useTranslation("hero");
+    const heroData = getHeroData(t);
     const roles = heroData.roles;
 
     useEffect(() => {
@@ -81,7 +83,7 @@ const Hero = ({ hasAnimated }) => {
                     <div className="h-12 md:h-16 animate-fade-in-up delay-100 mb-2">
                         {/* Typing */}
                         <h2 className="text-2xl md:text-3xl text-gray-600">
-                            Mình là {" "}
+                            {t("im")} {" "}
                             <span className="relative">
                                 <span className="bg-gradient-to-r from-cyan-500 to-[#00FF7F] bg-clip-text text-transparent font-bold border-r-2 border-gray-600 pr-1">
                                     {currentText}

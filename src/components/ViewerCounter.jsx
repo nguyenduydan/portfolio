@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react';
 import { Eye } from 'lucide-react';
 import { database } from '../firebase';
 import { ref, onValue, set, runTransaction, get } from 'firebase/database';
+import { useTranslation } from 'react-i18next';
 
 export default function ViewerCounter() {
     const [views, setViews] = useState(0);
     const [isLoading, setIsLoading] = useState(true);
     const [isAnimating, setIsAnimating] = useState(false);
     const [error, setError] = useState(null);
+    const { t } = useTranslation("other");
 
     useEffect(() => {
         // Tạo fingerprint unique cho mỗi browser
@@ -56,8 +58,6 @@ export default function ViewerCounter() {
                     });
 
                     console.log('✅ New visitor counted');
-                } else {
-                    console.log('👀 Returning visitor - not counted');
                 }
 
                 setIsLoading(false);
@@ -113,7 +113,7 @@ export default function ViewerCounter() {
     }
 
     return (
-        <div className="fixed left-6 bottom-5 z-50 select-none">
+        <div className="fixed right-3 bottom-20 z-50 select-none">
             <div className="relative group">
                 {/* Main counter card */}
                 <div className="relative bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-600 text-white px-4 py-2 rounded-4xl shadow-2xl backdrop-blur-sm border border-white/20 transition-all duration-300 hover:scale-105 hover:shadow-purple-500/50 hover:shadow-xl cursor-default">
@@ -147,7 +147,7 @@ export default function ViewerCounter() {
                                             {formatNumber(views)}
                                         </span>
                                         <p className='font-medium'>
-                                            lượt xem
+                                            {t("viewcount")}
                                         </p>
                                     </div>
                                 )}

@@ -1,0 +1,31 @@
+{
+    "greeting": "👋 Hello, My name is",
+    "name": "Nguyen Thiet Duy Dan",
+    "im": "I am",
+    "roles": [
+        "Frontend Developer",
+        "Backend Developer",
+        ".NET Developer",
+        "Software Developer"
+    ],
+    "description": "As a recent graduate, I am an enthusiastic .NET/NodeJS Backend Developer or ReactJS Frontend Developer, eager to contribute to creative software solutions.",
+    "stats": [
+        {
+            "number": "<1",
+            "label": "Years of experience"
+        },
+        {
+            "number": "5+",
+            "label": "Completed projects"
+        }
+    ],
+    "socialLinks": {
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "email": "Email"
+    },
+    "ctaButtons": {
+        "projects": "View My Projects",
+        "contact": "Contact Me"
+    }
+}

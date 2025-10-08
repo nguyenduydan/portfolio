@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Mail, Linkedin, Github, Facebook, Phone, Copy, Check } from "lucide-react";
 import { contactLinks } from "../data/contact.js";
+import { useTranslation } from "react-i18next";
 
 const iconMap = {
     Facebook: Facebook,
@@ -11,6 +12,7 @@ const iconMap = {
 const Contact = () => {
     const [copiedPhone, setCopiedPhone] = useState(false);
     const [copiedEmail, setCopiedEmail] = useState(false);
+    const { t } = useTranslation("other");
 
     const copyToClipboard = (text, type) => {
         navigator.clipboard.writeText(text);
@@ -35,11 +37,10 @@ const Contact = () => {
                 <div className="relative container mx-auto px-6 py-20 text-center">
                     {/* Title */}
                     <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#00d369] to-blue-500 bg-clip-text text-transparent">
-                        Liên hệ với tôi
+                        {t("title_contact")}
                     </h2>
                     <p className="text-gray-40 mb-3 max-w-2xl mx-auto">
-                        Hãy kết nối với tôi qua các nền tảng dưới đây — tôi luôn sẵn lòng trao đổi,
-                        hợp tác hoặc thảo luận về các ý tưởng công nghệ mới 💡
+                        {t("decs_contact")}
                     </p>
                     <div className="flex flex-col items-center justify-center py-6 gap-6">
                         {/* Phone */}
@@ -59,7 +60,7 @@ const Contact = () => {
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <span className="text-gray-400 text-sm text-start font-medium mb-1">Số điện thoại</span>
+                                            <span className="text-gray-400 text-sm text-start font-medium mb-1">{t("phone")}</span>
                                             <a
                                                 href="tel:0898394312"
                                                 className="text-green-400 text-md md:text-xl font-bold tracking-wider group-hover:text-green-300 transition-colors"
@@ -106,7 +107,7 @@ const Contact = () => {
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <span className="text-gray-400 text-sm font-medium mb-1 text-start">Email</span>
+                                            <span className="text-gray-400 text-sm font-medium mb-1 text-start">{t("mail")}</span>
                                             <a
                                                 href="mailto:duydan.cv@gmail.com"
                                                 className="text-blue-400 text-md md:text-xl font-bold group-hover:text-blue-300 transition-colors break-all"

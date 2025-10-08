@@ -1,0 +1,11 @@
+{
+    "title": "About",
+    "highlight": "Me",
+    "paragraphs": [
+        "Hello! I'm a <1>Backend Developer</1> fresh graduate, passionate about building reliable web applications and powerful APIs that deliver great user experiences.",
+        "I have knowledge and hands-on experience with programming languages like <1>PHP, JavaScript, HTML/CSS, C++, C#</1> along with modern frameworks such as <1>ReactJS, ASP.NET, Express, and Laravel</1>. I’m also familiar with various database management systems like <1>SQL Server, MySQL</1> and <1>MongoDB</1>.",
+        "I am an <1>effective planner</1> with strong teamwork skills under tight deadlines. Being <1>open-minded and enthusiastic</1>, I’m always ready to learn and collaborate to achieve the best results with my team."
+    ],
+    "btn_contact": "Contact Me",
+    "btn_download": "Download CV"
+}

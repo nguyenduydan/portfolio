@@ -1,9 +1,9 @@
 import { difachat, ntucoder, portfolio, todox } from "../assets/projects/slides.js";
 
-export const projects = [
+export const projects = (t) => [
     {
         title: "Personal Portfolio Website",
-        description: "Một trang web giới thiệu bản thân và thể hiện ra các kỹ năng đã đúc kết được",
+        description: t("descriptions.portfolio"),
         tech: ["React", "CSS", "JavaScript", "Vite", "TailwindCSS"],
         github: "https://github.com/nguyenduydan/portfolio",
         demo: "https://portfolio-omega-gilt-60.vercel.app/",
@@ -11,7 +11,7 @@ export const projects = [
     },
     {
         title: "DIFA Chat",
-        description: "Trang web dùng để giao tiếp với nhau qua các dòng tin nhắn với thời gian thực",
+        description: t("descriptions.difachat"),
         tech: ["NodeJS", "React", "MongoDB", "SocketIO", "Express", "JWT", "bcryptjs", "Resend", "Cloudinary", "TailwindCSS", "Arcjet", "DaisyUI"],
         github: "https://github.com/nguyenduydan/chat-app",
         demo: "https://chat-app-v6tji.sevalla.app/",
@@ -19,7 +19,7 @@ export const projects = [
     },
     {
         title: "TodoX",
-        description: "Một website quản lý các công việc cần làm. Nó cũng có phân trang, filter và một vài thứ khác nữa",
+        description: t("descriptions.todox"),
         tech: ["Express", "NodeJS", "ReactJS", "Shadcn-ui", "TailwindCSS"],
         github: "https://github.com/nguyenduydan/todoX_app",
         demo: "https://todox-app-fn13.onrender.com/",
@@ -27,7 +27,7 @@ export const projects = [
     },
     {
         title: "LMS-NTU Coder",
-        description: "Một website quản lý và bán các khóa học. Nó cũng cho phép người dùng code trực tiếp ngay tại website (Những chức năng này hiện tịa chỉ chạy ở sandbox)",
+        description: t("descriptions.ntucoder"),
         tech: [".NET core", "ReactJS", "ChakraUI", "Minio", "Oauth2", "JWT", "MySQL"],
         github: "https://github.com/nguyenduydan/ntucoder",
         demo: "https://ntucoder-nguyenduydans-projects.vercel.app/",

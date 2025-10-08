@@ -1,0 +1,11 @@
+{
+    "title": "Thông tin",
+    "highlight": "về mình",
+    "paragraphs": [
+        "Xin chào! Mình là một <1>Lập trình viên Backend</1> mới ra trường, đam mê xây dựng các ứng dụng web ổn định và những API mạnh mẽ, mang lại trải nghiệm tốt nhất cho người dùng.",
+        "Mình có kiến thức và kinh nghiệm thực hành với các ngôn ngữ lập trình như <1>PHP, JavaScript, HTML/CSS, C++, C#</1> cùng với các framework hiện đại như <1>ReactJS, ASP.NET, Express và Laravel</1>. Ngoài ra, mình quen thuộc với nhiều hệ quản trị cơ sở dữ liệu như <1>SQL Server, MySQL</1> và <1>MongoDB</1>.",
+        "Mình là người <1>lập kế hoạch hiệu quả</1>, có khả năng phối hợp tốt trong môi trường làm việc có thời hạn chặt chẽ. Là một người <1>cởi mở và nhiệt tình</1>, mình luôn sẵn sàng học hỏi và hợp tác để cùng nhóm đạt được kết quả tốt nhất."
+    ],
+    "btn_contact": "Liên hệ mình",
+    "btn_download": "Tải CV"
+}

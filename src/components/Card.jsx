@@ -1,7 +1,8 @@
 import { ExternalLink, Github, ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Card = ({ project, onClick }) => {
-
+    const { t } = useTranslation("project");
     return (
         <div
             className='group bg-black/80 rounded-2xl overflow-hidden shadow-lg hover:drop-shadow-[0_0_10px_#00d369] transition-all duration-300 transform animate-fade-in hover:rotate-z-3 hover:scale-105'
@@ -76,7 +77,7 @@ const Card = ({ project, onClick }) => {
                         className='flex-1 bg-gradient-to-l from-[#00d369] to-blue-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-colors cursor-pointer'
                     >
                         <ExternalLink size={18} />
-                        Live
+                        {t("btn_demo")}
                     </a>
                 </div>
             </div>
@@ -86,7 +87,7 @@ const Card = ({ project, onClick }) => {
                 <button className='w-full text-emerald-400 font-medium flex items-center justify-center gap-2 py-3 rounded-lg border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all duration-300 group/btn cursor-pointer'
                     onClick={onClick}
                 >
-                    Xem chi tiết
+                    {t("btn_detail")}
                     <ChevronRight size={18} className='group-hover/btn:translate-x-1 transition-transform' />
                 </button>
             </div>

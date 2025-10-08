@@ -1,0 +1,30 @@
+{
+    "title": "Skills",
+    "highlight": "of mine",
+    "title_tech": "Tools & Technologies",
+    "text_tech": "Proficient in modern web development tools and frameworks. Experienced in building user-friendly, interactive, and maintainable applications.",
+    "title_softskill": "Soft Skills",
+    "text_softskill": "Strong communication, effective collaboration, and a proactive learning attitude. Adaptable and a positive contributor in team environments.",
+    "softSkills": [
+        {
+            "name": "Professional Communication",
+            "description": "Effective presentation and teamwork skills"
+        },
+        {
+            "name": "Passionate Learner",
+            "description": "Always updating with new technologies and knowledge"
+        },
+        {
+            "name": "Reliable",
+            "description": "Committed to deadlines and work quality"
+        },
+        {
+            "name": "Effective Time Management",
+            "description": "Prioritize and handle tasks efficiently"
+        },
+        {
+            "name": "Curious Mindset",
+            "description": "Continuously exploring and learning new things"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "title": "Kỹ năng",
+    "highlight": "của mình",
+    "title_tech": "Công Cụ & Công Nghệ",
+    "text_tech": "Thành thạo các công cụ và framework lập trình web hiện đại. Có kinh nghiệm xây dựng ứng dụng thân thiện, tương tác tốt và dễ bảo trì.",
+    "title_softskill": "Kỹ Năng Mềm",
+    "text_softskill": "Giao tiếp tốt, phối hợp hiệu quả và luôn chủ động học hỏi. Dễ thích nghi, tích cực đóng góp trong môi trường nhóm.",
+    "softSkills": [
+        {
+            "name": "Giao Tiếp Chuyên Nghiệp",
+            "description": "Kỹ năng trình bày và làm việc nhóm hiệu quả"
+        },
+        {
+            "name": "Đam Mê Học Hỏi",
+            "description": "Luôn cập nhật công nghệ và kiến thức mới"
+        },
+        {
+            "name": "Đáng Tin Cậy",
+            "description": "Cam kết deadline và chất lượng công việc"
+        },
+        {
+            "name": "Quản Lý Thời Gian Hiệu Quả",
+            "description": "Ưu tiên và xử lý công việc khoa học"
+        },
+        {
+            "name": "Ham Học Hỏi",
+            "description": "Tìm tòi và học hỏi không ngừng nghỉ"
+        }
+    ]
+}

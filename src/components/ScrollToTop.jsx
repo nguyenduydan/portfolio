@@ -9,7 +9,7 @@ const ScrollToTop = ({ showScrollTop }) => {
     return (
         <button
             onClick={scrollToTop}
-            className={`fixed bottom-5 right-8 bg-gradient-to-bl from-green-400 to-black text-white p-3 rounded-full hover:bg-gray-800 transition-all duration-500 shadow-lg cursor-pointer
+            className={`fixed bottom-5 right-4 bg-gradient-to-bl from-green-400 to-black text-white p-3 rounded-full hover:bg-gray-800 transition-all duration-500 shadow-lg cursor-pointer
                 transform ${showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5 pointer-events-none"}
             `}
         >
