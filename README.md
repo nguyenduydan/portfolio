@@ -69,7 +69,7 @@ portfolio/
 
 ### 1️⃣ Yêu cầu
 
-- Node.js (phiên bản ≥ 18)
+- Node.js (phiên bản ≥ 23)
 - npm hoặc yarn
 
 ### 2️⃣ Cài đặt
