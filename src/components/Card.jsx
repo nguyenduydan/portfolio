@@ -59,7 +59,7 @@ const Card = ({ project, onClick }) => {
                         <span className="px-3 py-1 bg-gradient-to-r from-[#00d369] to-black text-white text-sm rounded-full font-medium">...</span>
                     )}
                 </div>
-                <div className='flex gap-5 mt-5'>
+                <div className='md:hidden flex gap-5 mt-5'>
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
