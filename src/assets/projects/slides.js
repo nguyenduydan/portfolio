@@ -1,5 +1,8 @@
 //todox
-import img1 from "./todox/1.png";
+import todo1 from "./todox/1.png";
+import todo2 from "./todox/2.png";
+import todo3 from "./todox/3.png";
+import todo4 from "./todox/4.png";
 //difachat
 import df1 from "./difachat/1.png";
 import df2 from "./difachat/2.png";
@@ -20,7 +23,19 @@ import ntu5 from "./ntucoder/5.png";
 export const todox = [
     {
         id: 1,
-        url: img1
+        url: todo1
+    },
+    {
+        id: 2,
+        url: todo2
+    },
+    {
+        id: 3,
+        url: todo3
+    },
+    {
+        id: 4,
+        url: todo4
     },
 ];
 

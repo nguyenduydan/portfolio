@@ -59,10 +59,11 @@ const Navigation = () => {
                     <div className={`container mx-auto ${isScroll ? 'px-6 py-3' : 'px-5 py-4'}`}>
                         <div className="flex items-center justify-between">
                             {/* Logo/Brand */}
-                            <div className={`font-extrabold ${isScroll
+                            <div className={`font-extrabold flex gap-2 ${isScroll
                                 ? 'text-white text-2xl mr-5 scale-95'
                                 : 'text-gray-900 text-2xl mr-0 scale-100'
                                 }`}>
+                                <img src="/favicon-32x32.png" alt="favicon" />
                                 <a href="#">Port<span className='text-[#00FF7F]'>folio</span></a>
                             </div>
 
