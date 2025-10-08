@@ -76,7 +76,7 @@ const Hero = ({ hasAnimated }) => {
                     </div>
 
                     {/* Name */}
-                    <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-gray-600 bg-clip-text text-transparent mb-5 animate-fade-in-up delay-75">
+                    <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-gray-600 bg-clip-text text-transparent mb-5 animate-fade-in-up delay-75 py-3">
                         {heroData.name}
                     </h1>
 
@@ -85,7 +85,7 @@ const Hero = ({ hasAnimated }) => {
                         <h2 className="text-2xl md:text-3xl text-gray-600">
                             {t("im")} {" "}
                             <span className="relative">
-                                <span className="bg-gradient-to-r from-cyan-500 to-[#00FF7F] bg-clip-text text-transparent font-bold border-r-2 border-gray-600 pr-1">
+                                <span className="bg-gradient-to-r from-cyan-500 to-[#00FF7F] bg-clip-text text-transparent font-bold border-r-2 border-gray-600 pr-1 text-shadow-2xs">
                                     {currentText}
                                 </span>
                                 <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-500 to-[#00FF7F]"></span>
