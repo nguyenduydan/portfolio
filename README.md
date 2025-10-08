@@ -112,7 +112,7 @@ Thư mục `dist/` sẽ được tạo, sẵn sàng để deploy.
 **Nguyễn Thiết Duy Đan**
 📧 Email: duydan.cv@gmail.com
 💻 GitHub: [nguyenduydan](https://github.com/nguyenduydan)
-🌐 Portfolio: [https://nguyenduydan.github.io/portfolio](https://nguyenduydan.github.io/portfolio)
+🌐 Portfolio: [https://nguyenduydan.github.io/portfolio](https://portfolio-omega-gilt-60.vercel.app/)
 
 ---
 
