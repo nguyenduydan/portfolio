@@ -1,5 +1,6 @@
 import { ExternalLink, Github, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import Carousel from './Carousel';
 
 const Modal = ({ isOpen, onClose, project }) => {
     const [visible, setVisible] = useState(false);
@@ -47,12 +48,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                     <div className="flex flex-col max-h-[80vh] overflow-hidden">
                         {/* Image */}
                         <div className="relative">
-                            <img
-                                src={project?.img || null}
-                                alt={project?.title || "No Img"}
-                                className="w-full h-[40vh] object-cover rounded-t-2xl"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+                            <Carousel items={project?.img || ""} />
                         </div>
 
                         {/* Content */}

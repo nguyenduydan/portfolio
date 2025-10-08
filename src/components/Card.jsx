@@ -9,7 +9,7 @@ const Card = ({ project, onClick }) => {
             {/* Project Image */}
             <div className='relative h-52 overflow-hidden bg-black'>
                 <img
-                    src={project?.img || null}
+                    src={project.img[0]?.url || null}
                     alt={project?.title || "No image"}
                     loading="lazy"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"

@@ -1,7 +1,5 @@
-import difachat from "../assets/projects/1.png";
-import todox from "../assets/projects/todox.png";
-import ntucoder from "../assets/projects/ntucode.png";
-import portfolio from "../assets/projects/portfolio.png";
+import { difachat, ntucoder, portfolio, todox } from "../assets/projects/slides.js";
+
 export const projects = [
     {
         title: "Personal Portfolio Website",
