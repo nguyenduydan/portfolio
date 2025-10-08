@@ -76,7 +76,7 @@ const Hero = ({ hasAnimated }) => {
                     </div>
 
                     {/* Name */}
-                    <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-gray-600 bg-clip-text text-transparent mb-5 animate-fade-in-up delay-75 py-3">
+                    <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-black via-gray-800 to-gray-600 bg-clip-text text-transparent mb-3 animate-fade-in-up delay-75 py-3.5">
                         {heroData.name}
                     </h1>
 
