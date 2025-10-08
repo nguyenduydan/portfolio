@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-
+import ViewerCounter from './components/ViewerCounter';
 
 const App = () => {
   const hasAnimated = useInterSectionObserver();
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="max-h-screen bg-white text-black relative">
       <Background />
-
+      <ViewerCounter />
       <Navigation />
       <Hero hasAnimated={hasAnimated} />
       <About hasAnimated={hasAnimated} />
