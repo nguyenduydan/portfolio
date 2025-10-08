@@ -113,27 +113,17 @@ export default function ViewerCounter() {
     }
 
     return (
-        <div className="fixed left-6 bottom-6 z-50 select-none">
+        <div className="fixed left-6 bottom-5 z-50 select-none">
             <div className="relative group">
                 {/* Main counter card */}
                 <div className="relative bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-600 text-white px-4 py-2 rounded-4xl shadow-2xl backdrop-blur-sm border border-white/20 transition-all duration-300 hover:scale-105 hover:shadow-purple-500/50 hover:shadow-xl cursor-default">
 
                     {/* Content */}
-                    <div className="flex items-center gap-3.5 relative z-10">
+                    <div className="flex items-center gap-2 relative z-10">
                         {/* Icon với animation */}
                         <div className={`relative transition-transform duration-300 ${isAnimating ? 'scale-110 rotate-12' : ''
                             }`}>
-                            <div className='flex items-center gap-2'>
-                                <div className="relative">
-                                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                                    <div className="absolute inset-0 bg-white rounded-full animate-ping"></div>
-                                </div>
-                                <span className="text-sm md:text-md font-bold tracking-wider text-white">
-                                    LIVE
-                                </span>
-                            </div>
-
-
+                            <Eye className='h-4 w-4' />
                             {/* Pulse effect khi có view mới */}
                             {isAnimating && (
                                 <>
@@ -147,17 +137,17 @@ export default function ViewerCounter() {
 
                         {/* Counter display */}
                         <div className="flex flex-col leading-tight">
-                            <span className={`text-sm md:text-lg font-extrabold tracking-tight transition-all duration-300 ${isAnimating ? 'scale-110 text-yellow-300 drop-shadow-lg' : 'text-white'
+                            <span className={`text-sm md:text-md font-extrabold tracking-tight transition-all duration-300 ${isAnimating ? 'scale-110 text-yellow-300 drop-shadow-lg' : 'text-white'
                                 }`}>
                                 {isLoading ? (
                                     <span className="inline-block animate-pulse">...</span>
                                 ) : (
-                                    <div className='flex gap-2'>
-                                        <span className="inline-block tabular-nums text-[#00FF7F] text-shadow-2xl text-shadow-emerald-200">
+                                    <div className='flex gap-1 items-center'>
+                                        <span className="inline-block text-md md:text-lg tabular-nums text-[#00FF7F] text-shadow-2xl text-shadow-emerald-200">
                                             {formatNumber(views)}
                                         </span>
                                         <p className='font-medium'>
-                                            Lượt xem
+                                            lượt xem
                                         </p>
                                     </div>
                                 )}
