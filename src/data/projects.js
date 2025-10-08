@@ -29,8 +29,8 @@ export const projects = [
         title: "LMS-NTU Coder",
         description: "Một website quản lý và bán các khóa học. Nó cũng cho phép người dùng code trực tiếp ngay tại website (Những chức năng này hiện tịa chỉ chạy ở sandbox)",
         tech: [".NET core", "ReactJS", "ChakraUI", "Minio", "Oauth2", "JWT", "MySQL"],
-        github: "https://github.com/nguyenduydan/todoX_app",
-        demo: "https://todox-app-fn13.onrender.com/",
+        github: "https://github.com/nguyenduydan/ntucoder",
+        demo: "https://ntucoder-nguyenduydans-projects.vercel.app/",
         img: ntucoder
     }
 ];
