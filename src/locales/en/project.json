@@ -3,7 +3,8 @@
         "portfolio": "A personal portfolio website showcasing my skills and experiences.",
         "difachat": "A real-time messaging web application that allows users to communicate instantly.",
         "todox": "A task management web app featuring pagination, filters, and more useful tools.",
-        "ntucoder": "A learning management website for selling and managing courses. It also allows users to write and run code directly on the website (currently running in sandbox mode)."
+        "ntucoder": "A learning management website for selling and managing courses. It also allows users to write and run code directly on the website (currently running in sandbox mode).",
+        "weatherapp": "A small website that uses an external API (OpenWeatherMap API) to learn how to work with APIs and display weather information for different regions."
     },
     "highlight": "Feature",
     "rest": "Projects",

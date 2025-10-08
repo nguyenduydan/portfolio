@@ -3,7 +3,8 @@
         "portfolio": "Một trang web giới thiệu bản thân và thể hiện ra các kỹ năng đã đúc kết được.",
         "difachat": "Trang web dùng để giao tiếp với nhau qua các dòng tin nhắn với thời gian thực.",
         "todox": "Một website quản lý các công việc cần làm. Nó cũng có phân trang, filter và một vài thứ khác nữa.",
-        "ntucoder": "Một website quản lý và bán các khóa học. Nó cũng cho phép người dùng code trực tiếp ngay tại website (Những chức năng này hiện tại chỉ chạy ở sandbox)."
+        "ntucoder": "Một website quản lý và bán các khóa học. Nó cũng cho phép người dùng code trực tiếp ngay tại website (Những chức năng này hiện tại chỉ chạy ở sandbox).",
+        "weatherapp": "Một website nhỏ sử dụng api của bên ngoài(OpenWeatherMap API) để học cách sử dụng api show ra các thông tin về thời tiết của các khu vực"
     },
     "highlight": "Dự án",
     "rest": "của mình",

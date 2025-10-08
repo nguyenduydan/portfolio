@@ -19,6 +19,9 @@ import ntu2 from "./ntucoder/2.png";
 import ntu3 from "./ntucoder/3.png";
 import ntu4 from "./ntucoder/4.png";
 import ntu5 from "./ntucoder/5.png";
+//weather
+import wt1 from "./weather/1.png";
+import wt2 from "./weather/2.png";
 
 export const todox = [
     {
@@ -79,7 +82,7 @@ export const ntucoder = [
         id: 5,
         url: ntu5
     },
-]; 7;
+];
 
 export const difachat = [
     {
@@ -98,4 +101,16 @@ export const difachat = [
         id: 4,
         url: df4
     },
+];
+
+export const weather = [
+    {
+        id: 1,
+        url: wt1
+    },
+    {
+        id: 2,
+        url: wt2
+    },
+
 ];

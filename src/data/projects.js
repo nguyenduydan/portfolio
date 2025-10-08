@@ -1,4 +1,4 @@
-import { difachat, ntucoder, portfolio, todox } from "../assets/projects/slides.js";
+import { difachat, ntucoder, portfolio, todox, weather } from "../assets/projects/slides.js";
 
 export const projects = (t) => [
     {
@@ -32,5 +32,13 @@ export const projects = (t) => [
         github: "https://github.com/nguyenduydan/ntucoder",
         demo: "https://ntucoder-nguyenduydans-projects.vercel.app/",
         img: ntucoder
+    },
+    {
+        title: "Weather App",
+        description: t("descriptions.weatherapp"),
+        tech: ["React", "CSS", "JavaScript", "Vite", "TailwindCSS"],
+        github: "https://github.com/nguyenduydan/Weather_App",
+        demo: "https://weatherappntu.vercel.app/",
+        img: weather
     }
 ];
