@@ -36,10 +36,10 @@ const Contact = () => {
 
                 <div className="relative container mx-auto px-6 py-20 text-center">
                     {/* Title */}
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#00d369] to-blue-500 bg-clip-text text-transparent">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#00d369] to-blue-500 bg-clip-text text-transparent">
                         {t("title_contact")}
                     </h2>
-                    <p className="text-gray-40 mb-3 max-w-2xl mx-auto">
+                    <p className="text-gray-40 mb-3 max-w-2xl mx-auto text-sm md:text-md">
                         {t("decs_contact")}
                     </p>
                     <div className="flex flex-col items-center justify-center py-6 gap-6">

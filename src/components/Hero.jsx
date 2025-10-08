@@ -97,7 +97,7 @@ const Hero = ({ hasAnimated }) => {
                         {heroData.description}
                     </p>
                     {/* {ctaButtons} */}
-                    <div className="flex flex-col justify-center gap-3 mb-8 sm:flex-row fade-in delay-1000">
+                    <div className="flex flex-col justify-center gap-3 mb-4 sm:flex-row fade-in delay-1000">
                         {heroData.ctaButtons.map((button, index) => (
                             <a
                                 key={index}
@@ -118,7 +118,7 @@ const Hero = ({ hasAnimated }) => {
                         ))}
                     </div>
                     {/* Social Links */}
-                    <div className="flex justify-center space-x-6 mb-8 animate-fade-in-up delay-300">
+                    <div className="flex justify-center space-x-6 mb-4 animate-fade-in-up delay-300">
                         {heroData.socialLinks.map((social, index) => {
                             const IconComponent =
                                 social.icon === "GitHub"

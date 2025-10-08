@@ -16,7 +16,7 @@ const Projects = ({ hasAnimated }) => {
                 <div className={`transition-all ease-out duration-1000 delay-300 ${hasAnimated.projects ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                     {/* Header */}
                     <div className='text-center mb-16'>
-                        <h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-4'>
+                        <h2 className='text-3xl md:text-5xl font-bold text-gray-900 mb-4'>
                             <span className='bg-gradient-to-r from-[#00FF7F] to-black text-transparent bg-clip-text'>
                                 {t("highlight")}
                             </span>{" "}

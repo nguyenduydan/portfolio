@@ -25,7 +25,7 @@ const Skills = ({ hasAnimated }) => {
                         : "opacity-0 translate-y-10"
                         }`}
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center">
                         {t("title")} <span className="text-[#00FF7F]">{t("highlight")}</span>
                     </h2>
                 </div>
