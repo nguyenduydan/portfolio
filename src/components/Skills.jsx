@@ -140,7 +140,7 @@ const Skills = ({ hasAnimated }) => {
                                     return (
                                         <div
                                             key={index}
-                                            className="group flex flex-row items-center justify-center px-2 w-full md:w-80 py-1 bg-black/30 rounded-xl border border-zinc-800 hover:border-[#00FF7F] transition-all duration-300 hover:scale-105 cursor-pointer">
+                                            className="group flex flex-row items-center justify-center px-2 w-full md:w-80 py-1 bg-black/30 rounded-xl border border-zinc-800 hover:border-[#00FF7F] transition-all duration-300 hover:scale-105">
                                             <div className="p-3 rounded-lg bg-[#00FF7F]/10 flex items-center justify-center group-hover:bg-[#00FF7F]/20 group-hover:scale-110 transition-all duration-300"
                                             >
                                                 <SkillIcon className="text-[#00FF7F]" size={15} />

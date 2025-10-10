@@ -21,7 +21,7 @@ const Card = ({ project, onClick }) => {
                             target="_blank"
                             rel="noopener noreferrer"
                             href={project?.github}
-                            className='flex-1 bg-white text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors cursor-pointer'
+                            className='flex-1 bg-white text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors'
                         >
                             <Github size={18} />
                             Code
@@ -30,7 +30,7 @@ const Card = ({ project, onClick }) => {
                             target="_blank"
                             rel="noopener noreferrer"
                             href={project?.demo}
-                            className='flex-1 bg-gradient-to-l from-[#00d369] to-blue-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-colors cursor-pointer'
+                            className='flex-1 bg-gradient-to-l from-[#00d369] to-blue-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-colors'
                         >
                             <ExternalLink size={18} />
                             Live
@@ -65,7 +65,7 @@ const Card = ({ project, onClick }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         href={project?.github}
-                        className='flex-1 bg-white border-3 text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors cursor-pointer'
+                        className='flex-1 bg-white border-3 text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors'
                     >
                         <Github size={18} />
                         Code
@@ -74,7 +74,7 @@ const Card = ({ project, onClick }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         href={project?.demo}
-                        className='flex-1 bg-gradient-to-l from-[#00d369] to-blue-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-colors cursor-pointer'
+                        className='flex-1 bg-gradient-to-l from-[#00d369] to-blue-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-colors'
                     >
                         <ExternalLink size={18} />
                         {t("btn_demo")}
@@ -84,7 +84,7 @@ const Card = ({ project, onClick }) => {
 
             {/* View Details Link */}
             <div className='px-6 pb-6 hidden md:block'>
-                <button className='w-full text-emerald-400 font-medium flex items-center justify-center gap-2 py-3 rounded-lg border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all duration-300 group/btn cursor-pointer'
+                <button className='w-full text-emerald-400 font-medium flex items-center justify-center gap-2 py-3 rounded-lg border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all duration-300 group/btn'
                     onClick={onClick}
                 >
                     {t("btn_detail")}

@@ -3,13 +3,14 @@ import Navigation from "./components/Navigation";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import { useInterSectionObserver } from "./hooks/useInterSectionObserver";
-import { useScrollToTop } from "./hooks/useScrollToTop";
 import Background from "./components/Background";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ViewerCounter from './components/ViewerCounter';
+
+import { useScrollToTop } from "./hooks/useScrollToTop";
 
 const App = () => {
   const hasAnimated = useInterSectionObserver();

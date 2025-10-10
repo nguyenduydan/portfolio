@@ -35,13 +35,13 @@ const Modal = ({ isOpen, onClose, project }) => {
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
                 <div
                     onClick={(e) => e.stopPropagation()}
-                    className={`relative bg-black/80 backdrop-blur-md rounded-2xl shadow-2xl md:max-w-5xl w-full border border-[#00d369]/30 transition-all duration-200 transform ease-in-out
-                        ${animate ? 'scale-100' : 'scale-0'}`}
+                    className={`relative bg-black/80 backdrop-blur-md rounded-2xl shadow-2xl md:max-w-5xl w-full border border-[#00d369]/30 transition-all duration-300 transform ease-in-out
+                        ${animate ? 'scale-100  opacity-100' : 'scale-50 opacity-0'}`}
                 >
                     {/* Close Button */}
                     <button
                         onClick={onClose}
-                        className="absolute top-0 right-0 bg-white/10 hover:bg-white/20 p-2 rounded-tr-2xl rounded-bl-lg transition-colors z-10 cursor-pointer"
+                        className="absolute top-0 right-0 bg-white/10 hover:bg-white/20 p-2 rounded-tr-2xl rounded-bl-lg transition-colors z-10"
                     >
                         <X size={24} className="text-red-500" />
                     </button>

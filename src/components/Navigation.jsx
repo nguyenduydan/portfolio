@@ -90,7 +90,7 @@ const Navigation = () => {
                                 {/* Nút Menu / Close */}
                                 <button
                                     onClick={toggleMobileMenu}
-                                    className={`relative w-10 h-10 flex items-center justify-center rounded-lg transition-all duration-300 cursor-pointer overflow-hidden ${isScroll ? "text-white hover:bg-white/10" : "text-gray-900 hover:bg-gray-300"}`}>
+                                    className={`relative w-10 h-10 flex items-center justify-center rounded-lg transition-all duration-300 overflow-hidden ${isScroll ? "text-white hover:bg-white/10" : "text-gray-900 hover:bg-gray-300"}`}>
                                     {/* Icon Menu */}
                                     <Menu className={`absolute w-6 h-6 transform transition-all duration-500 ease-in-out ${isMobileMenu ? "scale-0 rotate-360 opacity-0" : "scale-100 rotate-0 opacity-100"}`} />
                                     {/* Icon X */}
@@ -118,7 +118,7 @@ const Navigation = () => {
                                             style={{
                                                 transitionDelay: isMobileMenu ? `${index * 100}ms` : "0ms",
                                             }}
-                                            className={`block py-2 px-3 text-white rounded-lg transition-all duration-500 ${isMobileMenu ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}hover:bg-gray-200 hover:text-black`}>
+                                            className={`block py-2 px-3 text-white rounded-lg transition-all duration-200 ${isMobileMenu ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}hover:bg-gray-200 hover:text-green-500 hover:font-bold`}>
                                             {item.label}
                                         </a>
                                     ))}

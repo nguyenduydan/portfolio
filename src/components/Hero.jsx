@@ -103,7 +103,7 @@ const Hero = ({ hasAnimated }) => {
                             <a
                                 key={index}
                                 href={button.href}
-                                className={`group relative px-6 py-3 rounded-lg transition-all duration-300 font-medium text-sm cursor-pointer
+                                className={`group relative px-6 py-3 rounded-lg transition-all duration-300 font-medium text-sm
                             ${button.variant === 'primary'
                                         ? 'btn-hero-primary'
                                         : 'border-2 border-black text-black bg-white font-semibold rounded-lg hover:drop-shadow-[5px_5px_black] transition-all duration-200'

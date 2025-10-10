@@ -16,8 +16,8 @@ input[type="button"] {
 
 /* Dành cho trình duyệt Webkit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 7px;
+  width: 0px;
+  height: 0px;
 }
 
 ::-webkit-scrollbar-track {

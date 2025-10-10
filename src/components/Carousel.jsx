@@ -52,7 +52,7 @@ export default function Carousel({ items = [] }) {
             {/* Previous Button */}
             <button
                 onClick={goToPrevious}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 text-gray-800 p-2 rounded-full transition-all duration-200 hover:scale-110 cursor-pointer z-10"
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 text-gray-800 p-2 rounded-full transition-all duration-200 hover:scale-110 z-10"
                 aria-label="Previous slide"
             >
                 <ChevronLeft size={24} />
@@ -61,19 +61,19 @@ export default function Carousel({ items = [] }) {
             {/* Next Button */}
             <button
                 onClick={goToNext}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 text-gray-800 p-2 rounded-full transition-all duration-200 hover:scale-110 cursor-pointer z-10"
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 text-gray-800 p-2 rounded-full transition-all duration-200 hover:scale-110 z-10"
                 aria-label="Next slide"
             >
                 <ChevronRight size={24} />
             </button>
 
             {/* Dots Indicator */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-4">
                 {slides.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => goToSlide(index)}
-                        className={`z-10 cursor-pointer w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
+                        className={`z-10 w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
                             ? 'bg-gradient-to-r from-[#00d369] to-blue-400 w-8'
                             : 'bg-white bg-opacity-50 hover:bg-opacity-75'
                             }`}
