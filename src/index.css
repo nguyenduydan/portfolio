@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
 @import "tailwindcss";
 
-:root{
+:root {
   font-family: "Gluten", cursive !important;
+  cursor: url("/cursor.png"), auto;
+}
+
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  cursor: url("/cursor-pointer.png"), pointer;
 }
 
 /* Dành cho trình duyệt Webkit (Chrome, Edge, Safari) */
