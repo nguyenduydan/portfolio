@@ -6,7 +6,7 @@ const Footer = () => {
             {/* Footer note */}
             <div className="mt-16 text-gray-500 text-sm text-center">
                 © {new Date().getFullYear()} — by ❤️{" "}
-                <span className="text-[#00d369] font-semibold">Fog</span>. <span>Built with ReactJS and Tailwind CSS.</span>
+                <span className="text-[#00d369] font-bold">Fog</span>. <span>Built with ReactJS and Tailwind CSS.</span>
             </div>
         </footer>
     );
