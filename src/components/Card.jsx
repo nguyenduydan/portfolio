@@ -5,10 +5,10 @@ const Card = ({ project, onClick }) => {
     const { t } = useTranslation("project");
     return (
         <div
-            className='group bg-black/80 rounded-2xl overflow-hidden shadow-lg hover:drop-shadow-[0_0_10px_#00d369] transition-all duration-300 transform animate-fade-in hover:rotate-3 hover:scale-110 hover:-translate-y-9'
+            className='group bg-white rounded-2xl border-3 border-black overflow-hidden shadow-lg hover:drop-shadow-[15px_20px_0_black] transition-all duration-200 transform animate-fade-in ease-in-out hover:-translate-y-4'
         >
             {/* Project Image */}
-            <div className='relative h-52 overflow-hidden bg-black'>
+            <div className='relative h-52 overflow-hidden bg-black border-b-3'>
                 <img
                     src={project.img[0]?.url || null}
                     alt={project?.title || "No image"}
@@ -40,8 +40,8 @@ const Card = ({ project, onClick }) => {
             </div>
 
             {/* Project Info */}
-            <div className='p-6'>
-                <h3 className='text-xl font-bold text-gray-200 mb-2 group-hover:text-[#00d369] transition-colors'>
+            <div className='p-6 pointer-events-none'>
+                <h3 className='text-xl font-bold text-black mb-2 group-hover:text-[#00d369] transition-colors'>
                     {project.title}
                 </h3>
 
@@ -65,7 +65,7 @@ const Card = ({ project, onClick }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         href={project?.github}
-                        className='flex-1 bg-white text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors cursor-pointer'
+                        className='flex-1 bg-white border-3 text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors cursor-pointer'
                     >
                         <Github size={18} />
                         Code

@@ -37,7 +37,7 @@ const About = ({ hasAnimated }) => {
                         <div className='flex flex-wrap gap-4 pt-6 justify-center'>
                             <a
                                 href="#contact"
-                                className='inline-flex items-center px-6 py-3 bg-[#00FF7F] text-black font-semibold rounded-lg hover:bg-[#00FF7F]/90 transition-all duration-300 hover:scale-105'
+                                className='inline-flex items-center px-6 py-3 bg-[#00FF7F] text-black font-semibold rounded-lg btn-hero-primary'
                             >
                                 <Phone size={20} className='mr-2 animate-bounce' />
                                 {t("btn_contact")}
@@ -46,7 +46,7 @@ const About = ({ hasAnimated }) => {
                             <a
                                 href="/cv.pdf"
                                 download
-                                className='inline-flex items-center px-6 py-3 border-2 border-[#02aa56] text-[#02aa56] font-semibold rounded-lg hover:bg-[#02aa56] hover:text-black transition-all duration-300 hover:scale-105'
+                                className='inline-flex items-center px-6 py-3 border-2 border-black text-black bg-white font-semibold rounded-lg hover:drop-shadow-[5px_5px_black] transition-all duration-200 ease-out'
                             >
                                 <Download size={20} className='mr-2' />
                                 {t("btn_download")}

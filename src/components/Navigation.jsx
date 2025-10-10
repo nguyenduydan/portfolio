@@ -55,7 +55,7 @@ const Navigation = () => {
             <div className="flex justify-center mx-auto z-10">
                 <div
                     className={`transition-all duration-500 ease-in-out ${isScroll
-                        ? "mt-4 mx-4 bg-black/50 backdrop-blur-sm shadow-lg rounded-full max-w-full md:max-w-4xl w-full"
+                        ? "mt-4 mx-4 bg-black/80 backdrop-blur-lg shadow-lg rounded-full max-w-full md:max-w-4xl w-full"
                         : "lg:max-w-6xl md:max-w-3xl w-full bg-transparent mt-0 mx-0 rounded-none shadow-none backdrop-blur-none"
                         }`}
                 >
@@ -86,27 +86,28 @@ const Navigation = () => {
                             </div>
 
                             {/* Mobile Menu */}
-                            <div className="md:hidden flex gap-2">
+                            <div className="md:hidden flex items-center gap-2 relative">
+                                {/* Nút Menu / Close */}
                                 <button
                                     onClick={toggleMobileMenu}
-                                    className={`p-2 rounded-lg transition-colors cursor-pointer ${isScroll
-                                        ? "text-white hover:bg-white/10"
-                                        : "text-gray-900 hover:bg-gray-300"
-                                        }`}
-                                >
-                                    {isMobileMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                                    className={`relative w-10 h-10 flex items-center justify-center rounded-lg transition-all duration-300 cursor-pointer overflow-hidden ${isScroll ? "text-white hover:bg-white/10" : "text-gray-900 hover:bg-gray-300"}`}>
+                                    {/* Icon Menu */}
+                                    <Menu className={`absolute w-6 h-6 transform transition-all duration-500 ease-in-out ${isMobileMenu ? "scale-0 rotate-360 opacity-0" : "scale-100 rotate-0 opacity-100"}`} />
+                                    {/* Icon X */}
+                                    <X className={`absolute w-6 h-6 transform transition-all duration-500 ease-in-out ${isMobileMenu ? "scale-100 rotate-0 opacity-100" : "scale-0 -rotate-360 opacity-0"}`}
+                                    />
                                 </button>
+
+                                {/* Language Switcher */}
                                 <LanguageSwitcher />
                             </div>
                         </div>
 
                         {/* Mobile Dropdown */}
                         <div className="md:hidden w-full">
-                            <div
-                                className={`absolute transition-all duration-400 ease-out left-0 right-0 mt-4 mx-4 p-4 bg-black/80 backdrop-blur-lg shadow-lg rounded-lg ${isMobileMenu ? "h-56 opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}`}
-                            >
-                                <div className="space-y-3">
-                                    {navItems.map((item) => (
+                            <div className={`absolute transition-all duration-500 ease-out left-0 right-0 mt-4 mx-4 p-4 bg-black/80 backdrop-blur-md shadow-lg rounded-lg overflow-hidden ${isMobileMenu ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}>
+                                <div className={`space-y-3 transform transition-all duration-500 ease-out ${isMobileMenu ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}>
+                                    {navItems.map((item, index) => (
                                         <a
                                             key={item.href}
                                             href={item.href}
@@ -114,8 +115,10 @@ const Navigation = () => {
                                                 e.preventDefault();
                                                 scrollToSection(item.href);
                                             }}
-                                            className="block py-2 px-3 text-white hover:bg-gray-200 hover:text-black rounded-lg transition-colors"
-                                        >
+                                            style={{
+                                                transitionDelay: isMobileMenu ? `${index * 100}ms` : "0ms",
+                                            }}
+                                            className={`block py-2 px-3 text-white rounded-lg transition-all duration-500 ${isMobileMenu ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}hover:bg-gray-200 hover:text-black`}>
                                             {item.label}
                                         </a>
                                     ))}

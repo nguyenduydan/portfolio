@@ -5,6 +5,7 @@ import Rocket from "../assets/rocket-icon.svg";
 import Laptop from "../assets/laptop-icon.svg";
 import Avatar from "../assets/Avatar.jpg";
 import { useTranslation } from "react-i18next";
+import "./custom.css";
 
 const Hero = ({ hasAnimated }) => {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -97,20 +98,17 @@ const Hero = ({ hasAnimated }) => {
                         {heroData.description}
                     </p>
                     {/* {ctaButtons} */}
-                    <div className="flex flex-col justify-center gap-3 mb-4 sm:flex-row fade-in delay-1000">
+                    <div className="flex flex-col items-center justify-center gap-5 mb-4 sm:flex-row fade-in delay-1000">
                         {heroData.ctaButtons.map((button, index) => (
                             <a
                                 key={index}
                                 href={button.href}
-                                className={`group relative px-6 py-3 rounded-lg transition-all hover:scale-110  duration-300 font-medium text-sm cursor-pointer
+                                className={`group relative px-6 py-3 rounded-lg transition-all duration-300 font-medium text-sm cursor-pointer
                             ${button.variant === 'primary'
-                                        ? 'bg-black text-white shadow-lg hover:shadow-xl hover:bg-gray-800'
-                                        : 'border-2 border-black text-black hover:bg-black hover:text-white'
+                                        ? 'btn-hero-primary'
+                                        : 'border-2 border-black text-black bg-white font-semibold rounded-lg hover:drop-shadow-[5px_5px_black] transition-all duration-200'
                                     }`}
                             >
-                                {button.variant === 'primary' && (
-                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-[#00FF7F] rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                )}
                                 <span className={button.variant === 'primary' ? 'relative z-10' : ''}>
                                     {button.text}
                                 </span>
