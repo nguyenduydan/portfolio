@@ -63,18 +63,16 @@ const Card = ({ project, onClick }) => {
                 <div className='md:hidden flex gap-5 mt-5'>
                     <a
                         target="_blank"
-                        rel="noopener noreferrer"
-                        href={project?.github}
-                        className='flex-1 bg-white border-3 text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors'
+                        href={project.github}
+                        className='flex-1 bg-white border-3 text-gray-900 py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium hover:bg-white transition-colors pointer-events-auto'
                     >
                         <Github size={18} />
                         Code
                     </a>
                     <a
                         target="_blank"
-                        rel="noopener noreferrer"
-                        href={project?.demo}
-                        className='flex-1 bg-gradient-to-l from-[#00d369] to-blue-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-colors'
+                        href={project.demo}
+                        className='flex-1 bg-gradient-to-l from-[#00d369] to-blue-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-colors pointer-events-auto'
                     >
                         <ExternalLink size={18} />
                         {t("btn_demo")}
