@@ -5,7 +5,7 @@ const Card = ({ project, onClick }) => {
     const { t } = useTranslation("project");
     return (
         <div
-            className='group bg-white rounded-2xl border-3 border-black overflow-hidden shadow-lg hover:drop-shadow-[15px_20px_0_black] transition-all duration-200 transform animate-fade-in ease-in-out hover:-translate-y-4'
+            className='group bg-white rounded-2xl border-3 border-black overflow-hidden shadow-lg hover:drop-shadow-[12px_12px_0_black] transition-all duration-200 transform animate-fade-in ease-in-out hover:-translate-y-4'
         >
             {/* Project Image */}
             <div className='relative h-52 overflow-hidden bg-black border-b-3'>
